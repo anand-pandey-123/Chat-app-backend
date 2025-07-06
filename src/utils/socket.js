@@ -10,7 +10,11 @@ const getRoomId = (userId, targetId) => {
 
 
 const initializeSocket = (server) => {
-    const io = socket(server)
+    const io = socket(server, {
+        cors: {
+            origin: "http://localhost:5173",
+        }
+    })
     
 
     io.on("connection", (socket) => {
