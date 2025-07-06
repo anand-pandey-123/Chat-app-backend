@@ -12,7 +12,7 @@ const getRoomId = (userId, targetId) => {
 const initializeSocket = (server) => {
     const io = socket(server, {
         cors: {
-            origin: "http://localhost:5173",
+            origin: "https://chat-app-frontend-q91gik3ho-anands-projects-6d91dd8d.vercel.app",
         }
     })
     
